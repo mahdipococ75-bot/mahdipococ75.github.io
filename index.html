@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09090d">
+  <title>نصب Mortal Kombat | Vita3K</title>
+  <style>
+    :root{color-scheme:dark;--bg:#08080d;--panel:#12121b;--line:#292938;--text:#f5f5fb;--muted:#b5b5c7;--red:#ff563d;--gold:#ffbd59;--blue:#48bfff}
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(ellipse at 15% 0%,#36131b 0,transparent 35%),radial-gradient(ellipse at 90% 30%,#101e3b 0,transparent 34%),var(--bg);color:var(--text);font-family:Tahoma,"Segoe UI",sans-serif;line-height:1.9}
+    .wrap{width:min(100% - 28px,900px);margin:auto;padding:28px 0 46px}
+    header{text-align:center;padding:20px 12px 24px}
+    .eyebrow{color:var(--gold);font-size:.83rem;letter-spacing:2px}
+    h1{font-size:clamp(1.8rem,6vw,3.1rem);line-height:1.35;margin:8px 0;color:#fff;text-shadow:0 0 25px #ff563d55}
+    .sub{color:var(--muted);margin:0 auto;max-width:600px}
+    .hero{border:1px solid #49313a;background:linear-gradient(135deg,#211017dd,#111521ee);border-radius:22px;padding:22px;text-align:center;box-shadow:0 18px 55px #0007}
+    .dragon{font-size:3rem;filter:drop-shadow(0 0 12px #ff563d);line-height:1.4}
+    .actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin-top:22px}
+    .btn{display:flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;color:white;font-weight:700;padding:15px 12px;border-radius:14px;border:1px solid transparent;transition:transform .18s,filter .18s;min-height:58px}
+    .btn:hover{transform:translateY(-2px);filter:brightness(1.12)}
+    .data{background:linear-gradient(135deg,#e84432,#a91e2c);box-shadow:0 7px 24px #e8443233}
+    .emu{background:linear-gradient(135deg,#267dce,#3546a6);box-shadow:0 7px 24px #267dce33}
+    .guide-btn{background:#242432;border-color:#444458;grid-column:1/-1}
+    .note{font-size:.84rem;color:#c5c5d2;margin:14px 0 0}
+    section{margin-top:24px;background:#101019eF;border:1px solid var(--line);border-radius:20px;padding:22px}
+    h2{font-size:1.35rem;margin:0 0 15px;display:flex;align-items:center;gap:10px}
+    h2 span{color:var(--gold)}
+    .steps{margin:0;padding-right:22px}
+    .steps li{padding:5px 0 10px}
+    .steps strong{color:#fff}
+    .file{direction:ltr;display:inline-block;max-width:100%;overflow-wrap:anywhere;color:#ffd18a;background:#24202a;border-radius:7px;padding:1px 7px;font-family:Arial,sans-serif;font-size:.92em}
+    .video{position:relative;width:100%;aspect-ratio:16/9;background:#050509;border-radius:14px;overflow:hidden;border:1px solid #333344}
+    .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    .video-fallback{font-size:.9rem;color:var(--muted);margin:10px 0 0}
+    .video-fallback a{color:#80cfff}
+    footer{text-align:center;color:#858599;font-size:.8rem;padding:22px 8px 0}
+    @media(max-width:520px){.actions{grid-template-columns:1fr}.guide-btn{grid-column:auto}.hero,section{padding:17px}.wrap{width:min(100% - 20px,900px)}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="eyebrow">VITA3K • GAME INSTALL GUIDE</div>
+      <h1>MORTAL KOMBAT</h1>
+      <p class="sub">فایل‌های موردنیاز و آموزش نصب بازی روی شبیه‌ساز Vita3K</p>
+    </header>
+
+    <div class="hero">
+      <div class="dragon">🐉</div>
+      <h2 style="justify-content:center;margin-bottom:4px">آماده‌ای وارد مبارزه بشی؟</h2>
+      <p class="sub">فایل دیتا، شبیه‌ساز و آموزش ویدیویی؛ همه در یک صفحه.</p>
+      <div class="actions">
+        <a class="btn data" href="https://raykachit.ir/files/Mortal-Kombat-(PCSE00023)-(fatolahi).zip" target="_blank" rel="noopener noreferrer">⬇ نصب دیتا بازی</a>
+        <a class="btn emu" href="https://raykachit.ir/files/Vita3k(fatolahi).zip" target="_blank" rel="noopener noreferrer">⬇ نصب شبیه‌ساز</a>
+        <a class="btn guide-btn" href="#guide">▶ آموزش نصب</a>
+      </div>
+      <p class="note">با زدن دکمه‌های دانلود، لینک فایل مربوطه باز می‌شود.</p>
+    </div>
+
+    <section id="guide">
+      <h2><span>01</span> آموزش نصب بازی</h2>
+      <ol class="steps">
+        <li>اول فایل دیتا <span class="file">Mortal-Kombat-(PCSE00023)-(fatolahi).zip</span> را دانلود کنید و بعد از حالت فشرده خارج کنید (با برنامه ZArchiver).</li>
+        <li>بعد شبیه‌ساز <span class="file">Vita3k(fatolahi).zip</span> را دانلود کنید، از حالت فشرده خارج کنید و نصب کنید؛ سپس بر اساس ویدیوی آموزش، بازی را نصب کنید.</li>
+      </ol>
+      <h2 style="margin-top:22px"><span>02</span> ویدیوی آموزش</h2>
+      <div class="video">
+        <iframe src="https://www.aparat.com/video/video/embed/videohash/ljhe10m/vt/frame"
+          title="آموزش نصب Mortal Kombat در Vita3K" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <p class="video-fallback">اگر ویدیو داخل صفحه باز نشد، <a href="https://www.aparat.com/v/ljhe10m" target="_blank" rel="noopener noreferrer">برای تماشای آموزش در آپارات اینجا بزن</a>.</p>
+    </section>
+    <footer>ساخته‌شده برای راهنمای نصب Mortal Kombat روی Vita3K</footer>
+  </main>
+</body>
+</html>
